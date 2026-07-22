@@ -187,6 +187,10 @@ const contactInfoInput = document.getElementById('contact-info');
 const contactInfoLabel = document.getElementById('contact-info-label');
 const proForm = document.getElementById('pro-form');
 const successAnimation = document.getElementById('success-animation');
+const formationMenuLink = document.getElementById('formation-menu-link');
+const formationPopup = document.getElementById('formation-popup');
+const formationPopupClose = document.querySelector('.formation-popup-close');
+const formationCards = document.querySelectorAll('.formation-option-card');
 
 
 if (proMenuLink) {
@@ -196,6 +200,38 @@ if (proMenuLink) {
         document.body.style.overflow = 'hidden';
     });
 }
+
+if (formationMenuLink) {
+    formationMenuLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        formationPopup.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+}
+
+if (formationPopupClose) {
+    formationPopupClose.addEventListener('click', () => {
+        formationPopup.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+}
+
+if (formationPopup) {
+    formationPopup.addEventListener('click', (e) => {
+        if (e.target === formationPopup) {
+            formationPopup.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
+formationCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const formation = card.dataset.formation;
+        formationPopup.classList.remove('active');
+        window.location.href = `formation.html?formation=${formation}`;
+    });
+});
 
 
 if (proPopupClose) {
