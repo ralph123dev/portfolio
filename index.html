@@ -1,582 +1,294 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" data-bs-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ralph — Développeur Fullstack Web & Mobile</title>
+<meta name="description" content="Développeur Fullstack, 5 ans d'expérience. Flutter, React Native, Next.js, Supabase. Fondateur de l'agence ASSIRAL.">
 
-    <title>Ralph Développeur Fullstack</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <meta name="description"
-        content="Développeur Fullstack avec 4 ans d'expertise. Boostez vos projets avec Ralph : expert React Native, Flutter et Python. Solutions web & mobiles performantes.">
-    <meta name="keywords"
-        content="Ralph développeur, expert Flutter Cameroun, React Native developer, cybersécurité, création application mobile, freelance python">
-    <meta name="author" content="Ralph développeur">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="language" content="French">
-
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ralphdeveloppeur.vercel.app">
-    <meta property="og:title" content="Ralph - Expert en Développement Fullstack Web & Mobile">
-    <meta property="og:description"
-        content="Découvrez mon portfolio : 4 ans d'expérience au service de vos applications web et mobiles haute performance.">
-    <meta property="og:image" content="https://ralphdeveloppeur.vercel.app/images/og-image.jpg">
-    <meta property="og:site_name" content="Portfolio de Ralph">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ralph | Développeur Fullstack">
-    <meta name="twitter:image" content="https://ralphdeveloppeur.vercel.app/images/og-image.jpg">
-
-    <link rel="canonical" href="https://ralphdeveloppeur.vercel.app">
-    <link rel="author" href="https://www.linkedin.com/in/ralph-developpeur">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ralph",
-      "url": "https://ralphdeveloppeur.vercel.app",
-      "image": "https://ralphdeveloppeur.vercel.app/images/logo.jpg",
-      "jobTitle": "Développeur Fullstack Web & Mobile",
-      "description": "Développeur expert en JavaScript, Python et Cybersécurité avec 4 ans d'expérience.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "CM"
-      },
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Fullstack Developer",
-        "skills": "React, Flutter, Python, TypeScript, Cybersécurité"
-      },
-      "sameAs": [
-        "https://youtube.com/@ralphdeveloppement",
-        "https://github.com/ralph123dev",
-        "https://www.linkedin.com/in/ralph-developpeur"
-      ]
-    }
-    </script>
+<link rel="stylesheet" href="index.css">
 </head>
-
 <body>
 
-    <!-- ======= NAVBAR ======= -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Ralph</div>
-            <ul class="nav-menu">
-                <li><a href="#accueil"     class="nav-link">Accueil</a></li>
-                <li><a href="#apropos"     class="nav-link">À propos</a></li>
-                <li><a href="#competences" class="nav-link">Compétences</a></li>
-                <li><a href="#projets"     class="nav-link">Projets</a></li>
-                <li><a href="#contact"     class="nav-link">Contact</a></li>
-                <li><a href="#" class="nav-link" id="formation-menu-link">Formation</a></li>
-                <li><a href="#" class="nav-link" id="pro-menu-link">Pro</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-
-    <!-- ======= HERO ======= -->
-    <section id="accueil" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="animate-text">Bonjour, je suis <span class="highlight">Ralph</span></h1>
-                <h2 class="animate-text-delay">Développeur Fullstack Web & Mobile</h2>
-                <p class="animate-text-delay-2">4 ans d'expérience dans le développement d'applications web et mobiles performantes.</p>
-                <div class="hero-buttons animate-text-delay-3">
-                    <a href="#contact" class="btn btn-primary">Me contacter</a>
-                    <a href="#projets" class="btn btn-secondary">Voir mes projets</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/moi.jpg"  alt="Ralph - Développeur Fullstack" class="profile-img" id="profile-img">
-                <img src="images/logo.jpg" alt="Logo Ralph" class="logo-img" id="logo-img">
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-        </div>
-    </section>
-
-
-    <!-- ======= À PROPOS ======= -->
-    <section id="apropos" class="about">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">À propos de moi</h2>
-            <div class="about-content">
-                <div class="about-text animate-on-scroll">
-                    <p>
-                        Passionné par le développement depuis 4 ans, je suis spécialisé dans la création d'applications
-                        web et mobiles performantes. Mon expertise couvre tout le spectre du développement fullstack,
-                        du frontend au backend, en passant par les applications mobiles natives et cross-platform.
-                    </p>
-                    <p>
-                        En plus du développement, je m'intéresse activement à la cybersécurité et je partage mes
-                        connaissances à travers des formations vidéo sur YouTube. J'aime transmettre mon savoir et
-                        aider les autres développeurs à progresser dans leur parcours.
-                    </p>
-                    <p>
-                        Pour améliorer la qualité de mon travail et rester à la pointe de la technologie, j'utilise
-                        également l'intelligence artificielle pour optimiser certaines tâches et accélérer le
-                        développement de mes projets.
-                    </p>
-                    <div class="cv-notice">
-                        <p>📄 <strong>CV disponible à la demande</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ======= COMPÉTENCES ======= -->
-    <section id="competences" class="skills">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Mes Outils</h2>
-            <div class="skills-grid">
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/java.png" alt="Java"></div>
-                    <h3>Java</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/flutter.png" alt="Flutter"></div>
-                    <h3>Flutter</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/python.png" alt="Python"></div>
-                    <h3>Python</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/pycharm.jpg" alt="Pycharm"></div>
-                    <h3>Pycharm</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/code.jpg" alt="Web"></div>
-                    <h3>HTML/CSS/JS</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/ts.png" alt="TypeScript"></div>
-                    <h3>TypeScript</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/cpp.jpg" alt="C++"></div>
-                    <h3>C++</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/react.jpg" alt="React Native"></div>
-                    <h3>React Native</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/expo.jpg" alt="Expo"></div>
-                    <h3>Expo</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/flask.png" alt="Flask"></div>
-                    <h3>Flask</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/hack.png" alt="Cybersécurité"></div>
-                    <h3>Cybersécurité</h3>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon"><img src="images/cursor.jpg" alt="Cursor"></div>
-                    <h3>Cursor</h3>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ======= PROJETS ======= -->
-    <section id="projets" class="projects">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Mes Projets</h2>
-            <div class="projects-grid">
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-content">
-                        <h3>APAD Environnement</h3>
-                        <p>Association Pour les Actions Durables. Site camerounais spécialisé en formation environnementale, accompagnement de projets durables et EIE. "Votre partenaire pour un développement durable, conforme et efficace."</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Web</span>
-                            <span class="tech-tag">Environnement</span>
-                        </div>
-                        <a href="https://apadsite.com/" target="_blank" class="project-link">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-content">
-                        <h3>ValidateMe.app</h3>
-                        <p>Application web innovante pour la validation et la vérification. Projet en cours de développement.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Fullstack</span>
-                            <span class="tech-tag">Web</span>
-                        </div>
-                        <a href="https://valideme.app" target="_blank" class="project-link">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-content">
-                        <h3>Sqilco.com</h3>
-                        <p>Développement front-end pour le site Sqilco. Expérience enrichissante dans le développement web moderne.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Frontend</span>
-                            <span class="tech-tag">Web</span>
-                        </div>
-                        <a href="https://sqilco.com" target="_blank" class="project-link">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-content">
-                        <h3>OrbitPost</h3>
-                        <p>Application en ligne OrbitPost, conçue pour partager et gérer du contenu rapidement via une interface moderne.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Web</span>
-                            <span class="tech-tag">Vercel</span>
-                        </div>
-                        <a href="http://orbitpost.vercel.app/" target="_blank" class="project-link">Voir le projet →</a>
-                        <a href="#" onclick="openMaintenancePopup(event)" class="project-link" id="orbitpost-download-btn">
-                            Télécharger l'app <ion-icon name="arrow-down-circle-outline"></ion-icon>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-content">
-                        <h3>Logiciel d'Optimisation</h3>
-                        <p>Développement d'un logiciel d'optimisation des machines. Projet en cours de développement.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Desktop</span>
-                            <span class="tech-tag">Optimisation</span>
-                        </div>
-                        <span class="project-link coming-soon">Bientôt disponible</span>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-content">
-                        <h3>NextCom S.A</h3>
-                        <p>Site web développé pour NextCom S.A. Application web moderne avec une interface utilisateur élégante et performante.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Fullstack</span>
-                            <span class="tech-tag">Web</span>
-                        </div>
-                        <a href="https://nextcom-r7pv.vercel.app/" target="_blank" class="project-link">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-content">
-                        <h3>Scrapping Telegram Stickers</h3>
-                        <p>Algorithme de scrapping pour télécharger les autocollants présents dans Telegram.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Scrapping</span>
-                        </div>
-                        <a href="https://github.com/ralph123dev/scrapping" target="_blank" class="project-link">Voir sur GitHub →</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ======= FORMATIONS ======= -->
-    <section id="formations" class="training">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Formations Vidéos</h2>
-            <p class="section-subtitle animate-on-scroll">Je partage mes connaissances sur YouTube</p>
-            <div class="youtube-channels">
-
-                <div class="channel-card animate-on-scroll">
-                    <div class="channel-icon"><i class="bi bi-youtube"></i></div>
-                    <h3>Ralph Développement</h3>
-                    <p>Chaîne principale de développement et tutoriels</p>
-                    <a href="https://youtube.com/@ralphdeveloppement" target="_blank" class="btn btn-primary">Voir la chaîne</a>
-                </div>
-
-                <div class="channel-card animate-on-scroll">
-                    <div class="channel-icon"><i class="bi bi-youtube"></i></div>
-                    <h3>Ralph Développeur</h3>
-                    <p>Formations avancées et projets pratiques</p>
-                    <a href="https://youtube.com/@ralphdeveloppeur" target="_blank" class="btn btn-primary">Voir la chaîne</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ======= CONTACT ======= -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll animated-typing" aria-live="polite">
-                <span id="animated-contact">Contactez-moi</span>
-                <span class="cursor" aria-hidden="true"></span>
-            </h2>
-            <p class="section-subtitle animate-on-scroll">N'hésitez pas à me contacter pour discuter de vos projets</p>
-            <div class="contact-methods">
-
-                <a href="https://wa.me/237689476780" target="_blank" class="contact-card animate-on-scroll">
-                    <div class="contact-icon">
-                        <img src="images/watshapp.jpg" alt="WhatsApp">
-                    </div>
-                    <h3>WhatsApp</h3>
-                    <p>+237 689 47 67 80</p>
-                </a>
-
-                <a href="https://t.me/+237677968494" target="_blank" class="contact-card animate-on-scroll">
-                    <div class="contact-icon">
-                        <img src="images/telegram.jpg" alt="Telegram">
-                    </div>
-                    <h3>Telegram</h3>
-                    <p>+237 677 96 84 94</p>
-                </a>
-
-                <a href="https://www.linkedin.com/posts/ralph-d%C3%A9veloppeur-b97b18276_developpeurweb-developpeurmobile-fullstackdeveloper-activity-7407024908666421249-piiA?originalSubdomain=fr"
-                    target="_blank" class="contact-card animate-on-scroll">
-                    <div class="contact-icon">
-                        <img src="images/OIP.webp" alt="LinkedIn">
-                    </div>
-                    <h3>LinkedIn</h3>
-                    <p>Ralph Developpeur</p>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ======= FOOTER ======= -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Ralph — Développeur Fullstack. Tous droits réservés.</p>
-            <div class="social" aria-label="Réseaux sociaux">
-                <a href="https://www.instagram.com/ralph_deveveloppeur?igsh=MXh0cm5zNGQ5emY0aA==" target="_blank" rel="noopener" aria-label="Instagram">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://youtube.com/@ralphdeveloppement" target="_blank" rel="noopener" aria-label="YouTube">
-                    <i class="bi bi-youtube"></i>
-                </a>
-                <a href="https://www.facebook.com/richar.franc.2025" target="_blank" rel="noopener" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- ======= POPUP PRO ======= -->
-    <div id="pro-popup" class="pro-popup">
-        <div class="pro-popup-content">
-            <span class="pro-popup-close">&times;</span>
-            <h2>Demande de Projet Professionnel</h2>
-            <form id="pro-form" action="https://formspree.io/f/mpzgqwpy" method="POST">
-
-                <div class="form-group">
-                    <label for="project-type">Type de projet *</label>
-                    <input type="text" id="project-type" name="project-type" required
-                        placeholder="Ex: Site web, Application mobile, etc.">
-                </div>
-
-                <div class="form-group">
-                    <label for="project-name">Nom du projet *</label>
-                    <input type="text" id="project-name" name="project-name" required
-                        placeholder="Ex: Mon application e-commerce">
-                </div>
-
-                <div class="form-group">
-                    <label for="project-description">Description *</label>
-                    <textarea id="project-description" name="project-description" required rows="4"
-                        placeholder="Décrivez votre projet en détail..."></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="example-link">Lien d'exemple (facultatif)</label>
-                    <input type="url" id="example-link" name="example-link" placeholder="https://exemple.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="contact-type">Moyen de contact *</label>
-                    <select id="contact-type" name="contact-type" required>
-                        <option value="">Sélectionnez un moyen de contact</option>
-                        <option value="whatsapp">WhatsApp</option>
-                        <option value="telegram">Telegram</option>
-                        <option value="facebook">Facebook</option>
-                        <option value="instagram">Instagram</option>
-                    </select>
-                </div>
-
-                <div class="form-group" id="contact-info-group" style="display: none;">
-                    <label id="contact-info-label">Contact *</label>
-                    <input type="text" id="contact-info" name="contact-info" placeholder="" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="budget">Budget (facultatif)</label>
-                    <input type="text" id="budget" name="budget" placeholder="Ex: 500 000 FCFA">
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-submit">Envoyer</button>
-            </form>
-        </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#accueil">Ralph<span class="dot">.</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <i class="bi bi-list fs-2" style="color:var(--text)"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link px-3" href="#apropos">À propos</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="#competences">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="#projets">Projets</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-3 mt-lg-0 d-flex align-items-center">
+          <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+            <span class="knob"><i class="bi bi-moon-stars-fill" id="knobIcon"></i></span>
+          </button>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-
-    <!-- ======= SUCCESS ======= -->
-    <div id="success-animation" class="success-animation">
-        <div class="success-message">
-            <div class="success-icon">✓</div>
-            <h3>Information envoyée avec succès !</h3>
+<!-- HERO -->
+<header id="accueil" class="hero">
+  <div class="hero-orb"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="eyebrow mb-4"><span class="ping"></span>Disponible pour missions freelance</span>
+        <h1 class="mt-4 mb-4">Développeur fullstack, je transforme vos idées en <span class="highlight">applications qui tiennent en prod</span>.</h1>
+        <p class="lead mb-4">5 ans d'expérience. Fondateur de l'agence <strong>ASSIRAL</strong>, basé entre Bafoussam et Yaoundé. Web, mobile, et un peu de cybersécurité quand le projet l'exige.</p>
+        <div class="d-flex flex-wrap gap-3 mb-5">
+          <a href="#contact" class="btn-accent">Me contacter</a>
+          <a href="#projets" class="btn-ghost">Voir mes projets</a>
         </div>
-    </div>
-
-    <!-- ======= FORMATION POPUP ======= -->
-    <div id="formation-popup" class="formation-popup">
-        <div class="formation-popup-content">
-            <span class="formation-popup-close">&times;</span>
-            <h2>Choisissez votre formation</h2>
-            <p class="formation-popup-intro">Sélectionnez la formation qui correspond à votre projet professionnel.</p>
-            <div class="formation-options">
-                <button class="formation-option-card" data-formation="web">
-                    <span class="formation-option-title">Développement web</span>
-                    <span class="formation-option-meta">3 mois · 60.000 FCFA</span>
-                </button>
-                <button class="formation-option-card" data-formation="mobile">
-                    <span class="formation-option-title">Développement mobile</span>
-                    <span class="formation-option-meta">3 mois · 80.000 FCFA</span>
-                </button>
-                <button class="formation-option-card" data-formation="desktop">
-                    <span class="formation-option-title">Développement logiciel desktop</span>
-                    <span class="formation-option-meta">3 mois · 90.000 FCFA</span>
-                </button>
-                <button class="formation-option-card" data-formation="cyber">
-                    <span class="formation-option-title">Cybersécurité</span>
-                    <span class="formation-option-meta">3 mois · 40.000 FCFA</span>
-                </button>
-            </div>
+        <div class="row g-4">
+          <div class="col-4"><div class="stat"><div class="num">5+</div><div class="lbl">ans d'expérience</div></div></div>
+          <div class="col-4"><div class="stat"><div class="num">3</div><div class="lbl">pays clients</div></div></div>
+          <div class="col-4"><div class="stat"><div class="num">200</div><div class="lbl">users sur Orbit Post</div></div></div>
         </div>
-    </div>
-
-    <!-- ======= ORBITPOST MAINTENANCE POPUP ======= -->
-    <div id="maintenance-popup" class="maintenance-popup">
-        <div class="maintenance-popup-content">
-            <span class="maintenance-popup-close" onclick="closeMaintenancePopup()">&times;</span>
-            <div class="maintenance-icon-wrapper">
-                <div class="maintenance-icon">
-                    <ion-icon name="construct-outline"></ion-icon>
-                </div>
-                <div class="maintenance-pulse"></div>
-            </div>
-            <h2>Application en maintenance</h2>
-            <p class="maintenance-desc">
-                Notre réseau social <strong>OrbitPost</strong> est actuellement en cours de maintenance pour vous offrir une meilleure expérience.
-            </p>
-            <p class="maintenance-subdesc">
-                En attendant, profitez de toutes les fonctionnalités sur la version web !
-            </p>
-            <a href="http://orbitpost.vercel.app/" target="_blank" class="btn btn-primary maintenance-cta">
-                <ion-icon name="globe-outline"></ion-icon>
-                Utiliser la version web
-            </a>
-            <div class="maintenance-footer-info">
-                <ion-icon name="time-outline"></ion-icon>
-                <span>Nous travaillons pour revenir très bientôt</span>
-            </div>
+      </div>
+      <div class="col-lg-5 text-center">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img id="profile-img" src="images/laba%20ralph.png" alt="Ralph">
+            <img id="logo-img" src="images/laba%20ralph.png" alt="Logo" style="display:none;">
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</header>
 
-    <!-- Confetti canvas -->
-    <canvas id="confetti-canvas"></canvas>
+<!-- APROPOS -->
+<section id="apropos" class="bg-surface border-top border-bottom border-soft">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-6 reveal">
+        <div class="eyebrow-sm mb-2">À propos</div>
+        <h2 class="section-title mb-4">Ce que je fais, concrètement</h2>
+        <p class="text-muted-2 mb-3">
+          Développeur fullstack depuis 5 ans, je conçois des applications web et mobiles pensées pour
+          aller jusqu'en production — pas seulement des maquettes. Mon travail couvre le frontend, le
+          backend, et les applications mobiles natives et cross-platform.
+        </p>
+        <p class="text-muted-2 mb-0">
+          Je m'intéresse aussi activement à la cybersécurité : tests d'intrusion sur les applications que
+          je développe pour mes clients, et partage de connaissances via ma série vidéo « Hackons ensemble
+          éthique » sur YouTube.
+        </p>
+      </div>
+      <div class="col-lg-6 reveal">
+        <div class="card-soft p-4">
+          <h3 class="h6 mb-3 font-display">En bref</h3>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+            <li class="d-flex justify-content-between border-bottom border-soft pb-2"><span class="text-muted-2">Basé à</span><span class="fw-semibold">Bafoussam</span></li>
+            <li class="d-flex justify-content-between border-bottom border-soft pb-2"><span class="text-muted-2">Clients</span><span class="fw-semibold">Partout dans le Monde</span></li>
+            <li class="d-flex justify-content-between"><span class="text-muted-2">CV</span><span class="fw-semibold">Disponible sur demande</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- COMPETENCES -->
+<section id="competences">
+  <div class="container reveal">
+    <div class="eyebrow-sm mb-2">Compétences</div>
+    <h2 class="section-title mb-5">Les outils que j'utilise au quotidien</h2>
+    <div class="d-flex flex-wrap gap-3" id="skills-wrap"></div>
+  </div>
+</section>
 
-    <!-- ======= SCRIPTS ======= -->
+<!-- PROJETS -->
+<section id="projets" class="bg-surface border-top border-bottom border-soft">
+  <div class="container">
+    <div class="eyebrow-sm mb-2 reveal">Projets</div>
+    <h2 class="section-title mb-5 reveal">Ce sur quoi j'ai travaillé</h2>
+    <div class="row g-4" id="projects-grid"></div>
+  </div>
+</section>
 
-    <!-- Typing animation -->
-    <script>
-        (function () {
-            const el = document.getElementById('animated-contact');
-            if (!el) return;
+<!-- FORMATIONS -->
+<section id="formations">
+  <div class="container reveal">
+    <div class="eyebrow-sm mb-2">Formations vidéo</div>
+    <h2 class="section-title mb-2">Je partage ce que j'apprends sur YouTube</h2>
+    <p class="text-muted-2 mb-5">Deux chaînes, deux angles : développement au quotidien et cybersécurité côté éthique.</p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-soft p-4 d-flex flex-row gap-3">
+          <div class="yt-icon"><i class="bi bi-youtube"></i></div>
+          <div>
+            <h3 class="h6 font-display mb-1">Ralph Développement</h3>
+            <p class="text-muted-2 small mb-2">Développement web/mobile et tutoriels pratiques.</p>
+            <a href="https://youtube.com/@ralphdeveloppement" target="_blank" class="proj-link">Voir la chaîne <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-soft p-4 d-flex flex-row gap-3">
+          <div class="yt-icon"><i class="bi bi-youtube"></i></div>
+          <div>
+            <h3 class="h6 font-display mb-1">Ralph Développeur</h3>
+            <p class="text-muted-2 small mb-2">Cybersécurité et projets avancés.</p>
+            <a href="https://youtube.com/@ralphdeveloppeur" target="_blank" class="proj-link">Voir la chaîne <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            const phrases = [
-                "Contactez-moi",
-                "Parlons de votre projet",
-                "Disponible pour missions",
-                "Réalisons ensemble votre idée"
-            ];
-            const colors = ["#60a5fa", "#00d4ff", "#f97316", "#10b981", "#a78bfa"];
-            const typeSpeed  = 70;
-            const deleteSpeed = 40;
-            const pauseAfter = 1200;
+<!-- CONTACT -->
+<section id="contact" class="bg-surface border-top border-soft">
+  <div class="container reveal">
+    <div class="eyebrow-sm mb-2">Contact</div>
+    <h2 class="section-title mb-2">Discutons de ton projet</h2>
+    <p class="text-muted-2 mb-5">Réponse généralement rapide sur WhatsApp ou Telegram.</p>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <a href="https://wa.me/237689476780" target="_blank" class="contact-card text-decoration-none">
+          <div class="contact-ic" style="color:#25D366"><i class="bi bi-whatsapp"></i></div>
+          <div><div class="fw-semibold" style="color:var(--text)">WhatsApp</div><div class="text-muted-2 small">+237 689 47 67 80</div></div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://t.me/+237677968494" target="_blank" class="contact-card text-decoration-none">
+          <div class="contact-ic" style="color:#29A9EA"><i class="bi bi-telegram"></i></div>
+          <div><div class="fw-semibold" style="color:var(--text)">Telegram</div><div class="text-muted-2 small">+237 677 96 84 94</div></div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.linkedin.com/posts/ralph-d%C3%A9veloppeur-b97b18276_developpeurweb-developpeurmobile-fullstackdeveloper-activity-7407024908666421249-piiA?originalSubdomain=fr" target="_blank" class="contact-card text-decoration-none">
+          <div class="contact-ic" style="color:#0A66C2"><i class="bi bi-linkedin"></i></div>
+          <div><div class="fw-semibold" style="color:var(--text)">LinkedIn</div><div class="text-muted-2 small">Ralph Développeur</div></div>
+        </a>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <button class="btn-accent" data-bs-toggle="modal" data-bs-target="#modalProjet">
+        <i class="bi bi-send me-2"></i>Envoyer une demande de projet
+      </button>
+    </div>
+  </div>
+</section>
 
-            let pIndex = 0, charIndex = 0, deleting = false;
+<footer>
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <div>© 2026 Ralph — Développeur Fullstack. Tous droits réservés.</div>
+    <div class="d-flex gap-3">
+      <a href="https://www.instagram.com/ralph_deveveloppeur" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://youtube.com/@ralphdeveloppement" target="_blank"><i class="bi bi-youtube"></i></a>
+      <a href="https://www.facebook.com/richar.franc.2025" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com/ralph123dev" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+</footer>
 
-            function tick() {
-                const phrase = phrases[pIndex];
-                if (!deleting) {
-                    el.textContent = phrase.slice(0, ++charIndex);
-                    if (charIndex === phrase.length) {
-                        el.style.color = colors[pIndex % colors.length];
-                        setTimeout(() => { deleting = true; tick(); }, pauseAfter);
-                        return;
-                    }
-                    setTimeout(tick, typeSpeed + Math.random() * 40);
-                } else {
-                    el.textContent = phrase.slice(0, --charIndex);
-                    if (charIndex === 0) {
-                        deleting = false;
-                        pIndex = (pIndex + 1) % phrases.length;
-                        setTimeout(tick, 250);
-                        return;
-                    }
-                    setTimeout(tick, deleteSpeed);
-                }
-            }
+<!-- MODAL: Demande de projet -->
+<div class="modal fade" id="modalProjet" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-soft">
+        <h5 class="modal-title font-display">Demande de projet professionnel</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <form id="formProjet">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Type de projet *</label>
+            <select class="form-select" name="type" required>
+              <option value="" selected disabled>Sélectionner…</option>
+              <option>Application mobile</option>
+              <option>Application web</option>
+              <option>SaaS / plateforme</option>
+              <option>Audit de sécurité</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nom du projet *</label>
+            <input type="text" name="project_name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Description *</label>
+            <textarea name="description" class="form-control" rows="3" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Lien d'exemple (facultatif)</label>
+            <input type="url" name="example_link" class="form-control" placeholder="https://">
+          </div>
+          <div class="row g-3">
+            <div class="col-6">
+              <label class="form-label">Moyen de contact *</label>
+              <select class="form-select" name="contact_method" required>
+                <option value="" selected disabled>Choisir…</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="telegram">Telegram</option>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label class="form-label">Contact *</label>
+              <input type="text" name="contact" class="form-control" required>
+            </div>
+          </div>
+          <div class="mt-3">
+            <label class="form-label">Budget (facultatif)</label>
+            <input type="text" name="budget" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer border-soft">
+          <button type="submit" class="btn-accent w-100">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-            setTimeout(tick, 300);
-        })();
-    </script>
+<!-- MODAL: succès -->
+<div class="modal fade" id="modalSucces" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <div class="fs-1 mb-2" style="color:var(--accent)"><i class="bi bi-check-circle"></i></div>
+      <h5 class="font-display">Information envoyée avec succès !</h5>
+      <button class="btn-ghost mt-3" data-bs-dismiss="modal">Fermer</button>
+    </div>
+  </div>
+</div>
 
-    <script src="script.js"></script>
+<!-- MODAL: maintenance OrbitPost -->
+<div class="modal fade" id="modalMaintenance" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-soft">
+        <h5 class="modal-title font-display">Application en maintenance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted-2">Notre réseau social <strong style="color:var(--text)">Orbit Post</strong> est actuellement en cours de maintenance pour vous offrir une meilleure expérience.</p>
+        <p class="text-muted-2 mb-0">En attendant, profite de toutes les fonctionnalités sur la version web.</p>
+      </div>
+      <div class="modal-footer border-soft">
+        <a href="http://orbitpost.vercel.app/" target="_blank" class="btn-accent w-100">Utiliser la version web</a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
