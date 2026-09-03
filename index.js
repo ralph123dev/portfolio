@@ -68,6 +68,50 @@ document.getElementById('projects-grid').innerHTML = projects.map(p => `
 `).join('');
 document.querySelectorAll('#projects-grid .reveal').forEach(el => io.observe(el));
 
+const counters = document.querySelectorAll('.counter');
+const animateCounter = counter => {
+  const target = Number(counter.dataset.target);
+  const prefix = counter.dataset.prefix || '';
+  const suffix = counter.dataset.suffix || '';
+  const duration = 1400;
+  const startTime = performance.now();
+
+  const updateCounter = currentTime => {
+    const progress = Math.min((currentTime - startTime) / duration, 1);
+    const easedProgress = 1 - Math.pow(1 - progress, 3);
+    const value = Math.floor(easedProgress * target);
+    counter.textContent = `${prefix}${value}${suffix}`;
+
+    if (progress < 1) requestAnimationFrame(updateCounter);
+  };
+
+  requestAnimationFrame(updateCounter);
+};
+
+const counterObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: .5 });
+
+counters.forEach(counter => counterObserver.observe(counter));
+
+const youtubeVideo = document.getElementById('youtubeVideo');
+if (youtubeVideo) {
+  const videoObserver = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) {
+      youtubeVideo.play().catch(() => {});
+    } else {
+      youtubeVideo.pause();
+    }
+  }, { threshold: .35 });
+
+  videoObserver.observe(youtubeVideo);
+}
+
 /* ---------- Formulaire ---------- */
 document.getElementById('formProjet').addEventListener('submit', async function(e){
   e.preventDefault();

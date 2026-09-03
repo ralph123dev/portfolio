@@ -96,6 +96,10 @@
 
 
 <header id="accueil" class="hero">
+  <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="images/ralph_vide.mp4" type="video/mp4">
+  </video>
+  <div class="hero-mist" aria-hidden="true"></div>
   <div class="hero-orb"></div>
   <div class="container position-relative">
     <div class="row align-items-center g-5">
@@ -108,9 +112,9 @@
           <a href="#projets" class="btn-ghost">Voir mes projets</a>
         </div>
         <div class="row g-4">
-          <div class="col-4"><div class="stat"><div class="num">5+</div><div class="lbl">ans d'expérience</div></div></div>
-          <div class="col-4"><div class="stat"><div class="num">+7</div><div class="lbl">pays clients</div></div></div>
-          <div class="col-4"><div class="stat"><div class="num">200</div><div class="lbl">users sur Orbit Post</div></div></div>
+          <div class="col-4"><div class="stat"><div class="num counter" data-target="5" data-suffix="+">0</div><div class="lbl">ans d'expérience</div></div></div>
+          <div class="col-4"><div class="stat"><div class="num counter" data-target="10" data-prefix="+">0</div><div class="lbl">projets livrés</div></div></div>
+          <div class="col-4"><div class="stat"><div class="num counter" data-target="200">0</div><div class="lbl">users sur Orbit Post</div></div></div>
         </div>
       </div>
       <div class="col-lg-5 text-center">
@@ -202,6 +206,12 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="youtube-video-wrap mt-5">
+      <video id="youtubeVideo" class="youtube-video" autoplay muted loop playsinline controls preload="metadata">
+        <source src="images/ralph_vide.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la lecture vidéo.
+      </video>
     </div>
   </div>
 </section>
