@@ -46,7 +46,9 @@ const projects = [
   { name:"Orbit Post", desc:"Réseau social conçu et développé en solo. 165 utilisateurs actifs à ce jour.", tags:["React Native","Expo"], link:"http://orbitpost.vercel.app/", label:"Voir le projet", maintenance:true },
   { name:"Logiciel d'Optimisation", desc:"Logiciel d'optimisation de machines industrielles. Projet en cours.", tags:["Desktop"], soon:true },
   { name:"NextCom S.A", desc:"Site web pour NextCom S.A. — application moderne, interface élégante et performante.", tags:["Fullstack","Web"], link:"https://nextcom-r7pv.vercel.app/", label:"Voir le projet" },
-  { name:"Scrapping Telegram Stickers", desc:"Algorithme de scrapping pour télécharger automatiquement les autocollants Telegram.", tags:["Python"], link:"https://github.com/ralph123dev/scrapping", label:"Voir sur GitHub" }
+  { name:"Scrapping Telegram Stickers", desc:"Algorithme de scrapping pour télécharger automatiquement les autocollants Telegram.", tags:["Python"], link:"https://github.com/ralph123dev/scrapping", label:"Voir sur GitHub" },
+   { name:"Mon SAAS", desc:"Un logiciel qui permet d'avoir des clients pour vos différents services offerts.", tags:["TypeScript"], soon:true }
+  
 ];
 document.getElementById('projects-grid').innerHTML = projects.map(p => `
   <div class="col-md-6 col-lg-4 reveal">
